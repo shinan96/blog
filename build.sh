@@ -1,5 +1,5 @@
 # ./bin/bash
-COMMIT_MSG="commit 默认"
+COMMIT_MSG="commit默认"
 set -e
 
 if [[ $1 ]];then
