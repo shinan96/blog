@@ -20,7 +20,7 @@ path.resolve(__dirname, 'dist')       // 当前路径+dist
 
 ### loader作用
 处理除js以外，其余类型的文件。
- 
+
 ### webpack --watch 使用观察者模式
 
 修改文件后，dist上的index.html没了，没找到原因。
@@ -44,8 +44,10 @@ HMR（Hot Module Replacement）实现浏览器的无刷新更新（hot reload）
 | xml-loader | xml格式资源处理 |
 | html-webpack-plugin | 打包出html文件，自动引入js,css |
 | clean-webpack-plugin | 清理打包后文件夹内容 |
-| webpack-dev-server ||
-| babel-core babel-loader babel-preset-env ||
+| webpack-dev-server |起服务|
+| babel-core babel-loader babel-preset-env |es6转es5|
+| terser-webpack-plugin |压缩js代码|
+| compression-webpack-plugin |开启gzip|
 
 
 注：

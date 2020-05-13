@@ -44,3 +44,10 @@ nginx -s stop			// 停止
 nginx -s restart		// 重启
 ```
 
+
+
+
+
+### 参考
+
+- [Nginx 从入门到实践，万字详解！](https://juejin.im/post/5ea931866fb9a043815146fb)
