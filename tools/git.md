@@ -6,7 +6,7 @@
 
 ```
 a = add
-status = st
+st = status
 cm = commit -m
 cam = commit -am
 br = branch
@@ -55,13 +55,13 @@ git branch –a 用来查看所有的分支，包括本地和远程的。但是�
 
 `git remote show origin`
 
-	
+​	
 
 来查看有关于origin的一些信息，包括分支是否tracking(追踪),stale(陈旧)分支也会显示出来。  
 
 `git remote prune origin`
 
-	
+
 刷新本地仓库与远程仓库的保持这些改动的同步
 ![](https://gitee.com/snhello/blog/blob/master/pic/git2.png)
 再输入git remote -a，被删除分支就看不到了。
@@ -85,7 +85,10 @@ git branch –a 用来查看所有的分支，包括本地和远程的。但是�
 `npm i -g gitmoji-cli`  
 
 使用时，前后要加上冒号':'， :与后面的文字加入空格区分
-	
+
+Git 命令行
+
+git diff 			查看当时修改文件
 
 ### 参考资料
 * [emoji](https://gitmoji.carloscuesta.me/)
