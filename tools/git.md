@@ -7,11 +7,14 @@
 ```
 a = add
 st = status
+lg = log
+one = log --oneline
 cm = commit -m
 cam = commit -am
 br = branch
 ck = checkout
 pl = pull
+d = diff
 po = push origin
 sn = show --name-only
 dn = diff --name-only 
