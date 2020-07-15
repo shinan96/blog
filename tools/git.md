@@ -6,18 +6,19 @@
 
 ```
 a = add
-st = status
-lg = log
-one = log --oneline
-cm = commit -m
-cam = commit -am
-br = branch
-ck = checkout
-pl = pull
-d = diff
-po = push origin
-sn = show --name-only
-dn = diff --name-only 
+	st = status
+	lg = log
+	one = log --oneline
+	cm = commit -m
+	cam = commit -am
+	br = branch
+	ck = checkout
+	d = diff
+	pl = pull
+	pl = pull origin
+	po = push origin
+	sn = show --name-only
+	dn = diff --name-only 
 ```
 
 ## git 对文件夹/文件名大小写修改不冲突
@@ -83,19 +84,78 @@ git branch –a 用来查看所有的分支，包括本地和远程的。但是�
 	
 	3.直接修改config文件
 
+## 查看本地log及远程log
+```
+git log
+git log [branch]
+git log --oneline [branch]
+
+git log remotes/origin[branch]
+git log --oneline remotes/origin[branch]
+```
 
 ## 使用emoji让commit 图形化
 `npm i -g gitmoji-cli`  
 
 使用时，前后要加上冒号':'， :与后面的文字加入空格区分
 
-Git 命令行
+
+
+### 缩写简称
+
+```
+A: 工作区新增的文件.
+C: 文件的一个新拷贝.
+D: 你本地删除的文件，服务器上还在。
+M: 文件的内容或者mode被修改。
+R: 文件名被修改了。
+T: 文件的类型被修改了。
+U: 文件没有被合并，需要完成合并才能进行提交。
+X: 未知状态。
+```
+
+
+
+### Git 命令行
 
 git diff 			查看当时修改文件
+
+### Git放弃本地修改
+
+1. 未使用add code
+```
+放弃某一个文件
+git checkout -- path/filename
+
+放弃所有文件(不会删除新加文件，因为此时对于git是未知)
+git checkout .
+```
+
+2. has add, not commit
+> 此步骤只是清除add操作，本地的修改并未改变，需要配合git check .
+
+```
+放弃某一个文件
+git reset HEAD path/filename
+
+放弃所有文件修改
+git reset HEAD
+```
+
+3. has commit
+```
+退回上一次commit的状态
+git reset --hard HEAD^
+
+回退到任一版本
+git reset --hard commitId
+```
+
 
 ### 参考资料
 * [emoji](https://gitmoji.carloscuesta.me/)
 * [完整emoji表情](https://github.com/caiyongji/emoji-list)
 * [emoji解释](https://github.com/pigcan/blog/issues/14)  
+* [git放弃本地文件修改](https://www.jianshu.com/p/c0f7e4ac14c7)
 
 	
