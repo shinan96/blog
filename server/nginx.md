@@ -45,6 +45,15 @@ nginx -s restart		// 重启
 ```
 
 
+`
+### Mac 安装nginx
+
+```
+brew install nginx
+
+/usr/local/etc/nginx      安装路径
+
+```
 
 
 

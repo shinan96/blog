@@ -40,3 +40,5 @@ T就像传递参数一样，我们传递了我们想要用于特定函数调用�
 
 ### 参考
 1. [TypeScript中文网](https://www.tslang.cn/)
+
+[TypeScript 入门教程](https://ts.xcatliu.com/)

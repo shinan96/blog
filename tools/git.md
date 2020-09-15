@@ -85,7 +85,7 @@ git branch –a 用来查看所有的分支，包括本地和远程的。但是�
 	3.直接修改config文件
 
 ## 查看本地log及远程log
-```
+```git
 git log
 git log [branch]
 git log --oneline [branch]
@@ -94,7 +94,33 @@ git log remotes/origin[branch]
 git log --oneline remotes/origin[branch]
 ```
 
+### stash
+
+
+
+```git
+git stash			储存
+git stash list		查看储存列表
+git stash apply		恢复储存记录，历史不删除
+git stash drop		删除历史记录；
+
+git stash pop			恢复储存记录，内容也删除了
+
+git stash apply stash@{0}			恢复指定记录
+```
+
+
+
+### cherry-pick
+
+```
+git cherry-pick <commit> 		将当前修改单个commit复制到当前分支
+```
+
+
+
 ## 使用emoji让commit 图形化
+
 `npm i -g gitmoji-cli`  
 
 使用时，前后要加上冒号':'， :与后面的文字加入空格区分
@@ -151,8 +177,26 @@ git reset --hard HEAD^
 git reset --hard commitId
 ```
 
+4. No add
+
+   ```
+   git clean -n			// 查看待删除文件
+   git clean -f/df		// 删除未add的文件或文件夹
+   ```
+
+   
+
+### 本地cmd连接远程服务器
+
+```
+ssh root@101.132.254.147
+input server password
+```
+
+
 
 ### 参考资料
+
 * [emoji](https://gitmoji.carloscuesta.me/)
 * [完整emoji表情](https://github.com/caiyongji/emoji-list)
 * [emoji解释](https://github.com/pigcan/blog/issues/14)  

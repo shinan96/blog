@@ -48,6 +48,8 @@ HMR（Hot Module Replacement）实现浏览器的无刷新更新（hot reload）
 | babel-core babel-loader babel-preset-env |es6转es5|
 | terser-webpack-plugin |压缩js代码|
 | compression-webpack-plugin |开启gzip|
+| uglifyjs-webpack-plugin |压缩(优化)js文件|
+| optimize-css-assets-webpack-plugin |压缩（优化）css文件|
 
 
 注：

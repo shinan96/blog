@@ -3,7 +3,9 @@
 
 > vue-cli3.0 配置
 ```js
-chainWepack: config => {
+cnpm i pug pug-html-loader pug-plain-loader -S
+
+chainWebpack: config => {
     config.module.rule('pug')
     .test(/\.pug/)
     .use('pug-html-loader')
