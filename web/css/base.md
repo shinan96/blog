@@ -17,4 +17,5 @@ vertiacl-align属性值分为4大类
   * 上下标：sub、super;
   * 数值百分比：10px、1em、5%；
 
+
 * [深入理解css之vertical-align](https://segmentfault.com/a/1190000015366749)
