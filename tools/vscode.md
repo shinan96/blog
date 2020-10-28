@@ -15,19 +15,42 @@ description :代码段描述,输入名字后编辑器显示的提示信息。
 ### 插件
 
 * Auto Close Tag
+
 * Auto Rename Tag
+
 * Beautify
+
 * Color Picker
+
 * ESLint
+
 * Git History
+
 * GitLens
+
 * Import Cost
+
 * Laravel goto view
+
 * pug
+
 * Pug(Jade) snippets
+
 * Vetur
+
 * Vue 2 Snippets
+
 * WakaTime
+
+* vue-helper
+
+  vue函数跳转
+
+* CSS Navigation
+
+  Css 跳转，组件跳转
+
+  
 
 
 

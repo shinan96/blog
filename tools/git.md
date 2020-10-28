@@ -181,9 +181,10 @@ git reset --hard commitId
 
    ```
    git clean -n			// 查看待删除文件
+   git clean -fd -n	// 查看待删除的文件夹/文件									-f文件	-d文件夹
    git clean -f/df		// 删除未add的文件或文件夹
-   ```
-
+```
+   
    
 
 ### 本地cmd连接远程服务器
