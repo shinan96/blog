@@ -101,12 +101,16 @@ git log --oneline remotes/origin[branch]
 ```git
 git stash			储存
 git stash list		查看储存列表
+git stash show		默认查看show第一个存储， git stash show stash@{num}
+
 git stash apply		恢复储存记录，历史不删除
 git stash drop		删除历史记录；
 
 git stash pop			恢复储存记录，内容也删除了
 
 git stash apply stash@{0}			恢复指定记录
+
+git stash clear		删除所有缓存的stash
 ```
 
 
@@ -183,6 +187,7 @@ git reset --hard commitId
    git clean -n			// 查看待删除文件
    git clean -fd -n	// 查看待删除的文件夹/文件									-f文件	-d文件夹
    git clean -f/df		// 删除未add的文件或文件夹
+   ```
 ```
    
    
@@ -192,6 +197,7 @@ git reset --hard commitId
 ```
 ssh root@101.132.254.147
 input server password
+
 ```
 
 
@@ -204,3 +210,4 @@ input server password
 * [git放弃本地文件修改](https://www.jianshu.com/p/c0f7e4ac14c7)
 
 	
+```

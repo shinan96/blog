@@ -20,9 +20,9 @@ state     数据仓库
 
 getter    获取数据(store的计算属性)
 
-mutation  函数方法
+mutation  函数方法													commit    methods修改
 
-commit    methods修改
+action																		dispatch	异步分发方法
 
 ---------------------
 
@@ -34,5 +34,41 @@ commit    methods修改
 
 
 
+#### Namespaced
+
+namespaced	分模块声明
+
+getter调用时
+
+```js
+this.$store.getters['XXX/getXXX'];
+```
+
+
+
+#### 代码优化
+
+##### 使用require.context引入
+
+```javascript
+import camelCase from 'lodash/camelCase'
+const requireModule = require.context('.', false, /\.js$/)
+const modules = {}
+requireModule.keys().forEach(fileName => {
+ // Don't register this file as a Vuex module
+ if (fileName === './index.js') return
+ 
+ const moduleName = camelCase(
+  fileName.replace(/(\.\/|\.js)/g, '')
+ )
+ modules[moduleName] = {
+        namespaced: true,
+        ...requireModule(fileName),
+       }
+})
+export default modules
+```
+
 参考文件
+
 1. [7个有用的Vue开发技巧](https://juejin.im/post/5ce3b519f265da1bb31c0d5f)

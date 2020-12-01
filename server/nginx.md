@@ -60,3 +60,4 @@ brew install nginx
 ### 参考
 
 - [Nginx 从入门到实践，万字详解！](https://juejin.im/post/5ea931866fb9a043815146fb)
+- [搞懂Nginx，一篇文章就够了](https://mp.weixin.qq.com/s?__biz=Mzg5ODA5NTM1Mw==&mid=2247490908&idx=1&sn=1d456ed00687f8f8b424fa306a7e431c&chksm=c0669ccaf71115dca2e1df29d54ee7249cd2285899e6586060b1fdaaa8e93c4b1333a43083c7&scene=132#wechat_redirect)
