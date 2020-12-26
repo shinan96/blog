@@ -143,8 +143,8 @@ Object.prototype.toString.call(targe)
 
 
 ​    
-    注：类数组对象转为数组对象方法
-    Array.prototype.slice.call ( arguments );
+​    注：类数组对象转为数组对象方法
+​    Array.prototype.slice.call ( arguments );
 
 
 ### 15.  constructor
@@ -171,7 +171,11 @@ box-sizing:
 
     你打印这个对象的语句执行的时候, 对象里面的确是空的,但是当程序继续执行,下面的代码是有对这个对象赋值的语句,所以chrome控制台显示,里面有值,你可以在打印这个对象语句上设置断点,然后执行一句,此时去看控制台,就是你想要的结果
 
+#### ~  按位取反
 
+```
+~ 取反的用法是，是因为-1的取反操作等于0，而其他数的取反操作不等于0。所以用indexOf操作符可以用~操作来判断某个字符串里是否有某个字符。
+```
 
 
 参考文件
